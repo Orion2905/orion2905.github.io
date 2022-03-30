@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html onmousemove="showCoords(event)">
+    <head>
+        <title>PROGETTO FAI</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body onmouseenter="showCoords(event)" id="body">
+        
+        <div class="background">
+            
+            <div id="a" class="ring-container" style="position:absolute; top: 55px; left: 52%;">
+            <div class="ringring"></div>
+            <div class="circle"></div>
+            <div class="card" id="b">
+                <img src="2.jpeg" alt="Avatar" style="width:100%; border-radius: 10%;">
+                <div class="container">
+                <h4><b>Siepi</b></h4> 
+                <p>Da sempre vegetazione è sinonimo di abbellimento e salute, quindi è ovvio che piantare una siepe in questo luogo darebbe un tocco di verde in più al parcheggio, ma non solo, anche alle aree limitrofe.
+                    Inoltre una siepe farebbe anche da recinzione naturale per il parcheggio. Vi chiedere a cosa serve, beh una recinzione servirebbe a impedire animali e malintenzionati di accadere al parcheggio, dare riparo alle auto dal vento e in oltre creare zona d'ombra in cui poter parcheggiare.</p> 
+                </div>
+            </div>
+            </div>
+
+
+            <div id="a" class="ring-container" style="position:absolute; top: 180px; left: 500px;">
+                <div class="ringring"></div>
+                <div class="circle"></div>
+                <div class="card" id="b">
+                    <img src="3.jpeg" alt="Avatar" style="width:100%; border-radius: 10%;">
+                    <div class="container">
+                        <h4><b>Ricarica macchine elettriche</b></h4> 
+                        <p>Macchine elettriche stanno diventando sempre più comuni oggigiorno, tutti hanno ormai sentito parlare di Tesla ad esempio, azienda produttrice di macchine ad energia elettrica. Le macchine elettriche stanno riscuotendo successo per vari motivi: il primo e sicuramente il loro basso impatto ambientale e il secondo è legato al fatto che non ha bisogno di carburanti.
+                            È duunque necessario che in una città in continua espansione come Roseto, la quale è anche una meta turistica, dovrebbe mettere a disposizione delle stazioni di ricarica per queste auto.</p> 
+                    </div>
+                    </div>
+            </div>
+
+            <div id="a" class="ring-container" style="position:absolute; top:350px; left: 400px;">
+                <div class="ringring"></div>
+                <div class="circle"></div>
+                <div class="card" id="b">
+                    <img src="1.jpeg" alt="Avatar" style="width:100%; border-radius: 10%;">
+                    <div class="container">
+                        <h4><b>Lampioni</b></h4> 
+                        <p>Per creare un ambiente accessibile anche di sera è necessario fornire illuminazione alla zona, ciò fa notare la mancanza di zone di luce adeguate nel perimetro del parcheggio. La nostra proposta è quella di posizionare nella zona lampioni a energia solare, poiché sarebbero di bassissimo impatto ambientale e autosufficienti. Per aumentare l'efficienza energetica si potrebbe dividere il parcheggio in più zone, ognuna illuminata indipendentemente, implementando dei sensori di movimento che permettano di accedere i lampioni solo dove e quando si ha necessità.</p> 
+                    </div>
+                    </div>
+            </div>
+
+        
+        </div>
+
+          
+        <script>
+            function showCoords(event) {
+                var x = event.clientX;
+                var y = event.clientY;
+                var coords = "X coords: " + x + ", Y coords: " + y;
+                document.getElementById("demo").innerHTML = coords;
+            }
+
+            function showImage(event) {
+                document.getElementById("test").innerHTML = coords;
+            }
+        </script>            
+    </body>
+</html>

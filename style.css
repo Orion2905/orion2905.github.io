@@ -1,0 +1,84 @@
+body{
+  background-color: #111;
+}
+
+#test {
+  display: none;
+  position: relative;
+  color: aliceblue;
+}
+
+.background {
+    background-color: #04AA6D;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10%;
+    position: absolute;
+    top: 20px; right: 20px; bottom: 20px; left: 20px;
+    border: 5px solid rgb(209, 209, 209)
+}
+
+#b {
+  display: none;
+}
+
+#a:hover #b {
+  display:block;
+}
+
+.background:hover + #test {
+  display: block;
+}
+
+.ring-container {
+  position: relative;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #181818;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+  left: 23px;
+}
+
+.ringring {
+  border: 3px solid #181818;
+  -webkit-border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+  0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+  50% {opacity: 1.0;}
+  100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+
+.card {
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 400px;
+  border-radius: 10%;
+  border: 13px solid aliceblue;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+
+}
